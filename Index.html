@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="wwwroot/images/icon.svg" type="image/png">
+
+        <title> Nome Empresa | Login </title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+        <link href="wwwroot/css/index.css" rel="stylesheet" type="text/css" ></link>
+        <link href="wwwroot/style.css" rel="stylesheet" type="text/css" ></link>
+
+        <script src="wwwroot/js/index.js"></script>
+        <script src="wwwroot/custom.js"></script>
+
+        <script src="controllers/indexController.js"></script>
+    </head>
+
+    <body>
+        <div class="container class-main">
+            <div class="content">
+                <div class="w-50">
+                    <div class="main-login">
+                        <div class="container-logar">
+                            <img src="wwwroot/images/logo.svg" class="h-100" alt="">
+                        </div>
+                        <div class="h-75 mt-4"> 
+                            <div class="label"> Usuário </div>
+                            <input type="text" id="EMAIL_TEXT" class="input-text" placeholder="Digite o usuário">
+        
+                            <div class="label"> Senha </div>
+                            <input type="password" id="SENHA_TEXT" class="input-text" placeholder="Digite a senha">
+        
+                            <div class="links-login"> 
+                                <div class="manter-conectado"> &nbsp; Manter conectado <input type="checkbox"> </div>
+                            </div>
+                            <div class="container-logar">
+                                <div class="btn-sim-unico" onclick="realizaLogin()"> ENTRAR </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="container-red">
+                    <div class="container-main-registrar">
+                        <div class="boas-vindas"> 
+                            Olá, Bem-vindo!
+                        </div>
+                        <div class="text-boas-vindas"> Cadastre-se em nossa plataforma on-line, para ter acesso ao sistema.</div>
+                        <div class="container-logar">
+                            <div class="btn-registrar"> REGISTRAR </div>
+                        </div>
+                    </div>
+                    <div class="container-filial-logada">
+                        <a id="FILIAL_LOGADA" title="Alterar Empresa"> NOME FILIAL </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

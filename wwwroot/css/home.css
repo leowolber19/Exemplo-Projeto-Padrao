@@ -1,0 +1,187 @@
+body{
+    margin: 0;
+    height: calc(100vh - 0px);
+    font-family: system-ui;
+}
+
+.menu-lateral {
+    width: 5%;
+    background-color: #c7c7c7;
+    height: 100%;
+    z-index: 0;
+    transition: .5s;
+    white-space: nowrap;
+}
+
+.conteudo {
+    width: 95%;
+    height: 100%;
+    background: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-conteudo-menu {
+    display: flex;
+    justify-content: space-between;
+    height: calc(100vh - 60px);
+}
+
+.toolbar-home{
+    height: 60px;
+    width: 100%;
+    background-color: #525252;
+    display: flex;
+    align-items: center;
+}
+
+.modulo-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-menu{
+    padding: 1em 0;
+    text-align: center;
+    font-size: 1.4em;
+    height: auto;
+}
+
+.modulo-menu:hover{
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.abre-menu{
+    width: 5%;color: white;
+    font-size: 1.6em;
+    cursor: pointer;
+    text-align: center;
+}
+
+.text-menu{
+    padding: 1em 0;
+    text-align: center;
+    font-size: 1.1em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-left: 1em;
+    width: 65%;
+}
+
+.title-toolbar{
+    color: white;
+    font-size: 1.1em;
+    width: 15%;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.container-usuario {
+    width: 80%;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-right: 1.5em;
+    display: flex;
+    justify-content: end;
+}
+
+.icon-usuario{
+    background: white;
+    padding: 0.5em 0.85em;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.conteudo-right-toolbar{
+    display: flex;
+    gap: 1.5em;
+    align-items: center;
+}
+
+.icon-usuario .fa-user{
+    color: #525252;
+}
+
+#FILIAL_LOGADA{
+    background: white;
+    padding: 0.75em 0em;
+    text-align: center;
+    font-weight: 500;
+    border: 1px solid #f1f1f1;
+    font-size: .9em;
+    text-transform: uppercase;
+}
+
+.conteudo-page{
+    height: 100%;
+    padding: 0 2em;
+}
+
+.panel-heading{
+    padding: 15px;
+}
+
+.panel-default>.panel-heading {
+    background-color: #f9f9f9;
+}
+
+.ativo{
+    color: #858585 !important;
+}
+
+.panel-body{
+    height: calc(100vh - 250px);
+    padding: 0;
+    background: white;
+}
+
+.panel-footer {
+    padding: 16px 15px;
+    font-weight: 500;
+    background-color: white;
+}
+
+.panel-default{
+    margin: 0;
+    box-shadow: 0px 1px 7px -4px black;
+    height: 100%;
+}
+
+.dx-icon{
+    font-size: .9em;
+    margin-right: 0.5em
+}
+
+.icon-fechar-popup{
+    cursor: pointer;
+}
+
+.containter-header-popup{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.25em 0 0;
+}
+
+.select-tipo{
+    padding: 0.5em;
+    cursor: pointer;
+    height: 50px;
+    width: 100%;
+    border-radius: 4px;
+    background: #f0f0f0;
+    border: none;
+    margin-top: 0.75em;
+}
+.exit-toolbar{
+    margin-left: 0.25em;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    cursor: pointer;
+    font-weight: 500;
+}

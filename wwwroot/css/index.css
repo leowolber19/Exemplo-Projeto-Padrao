@@ -1,0 +1,207 @@
+.container-main{
+    display:flex; 
+    height: 100%;
+}
+
+.container-imagem{
+    width: 70%;
+    height: 100%;
+}
+
+.container-login{
+    width: 30%;
+    height: 100%;
+    background: #ccc;
+}
+
+.select-filial{
+    padding: 0.5em;
+    cursor: pointer;
+    height: 50px;
+    width: 100%;
+    border-radius: 4px;
+    background: #f0f0f0;
+    border: none;
+}
+
+.input-text{
+    height: 35px;
+    padding: 1.5em 0.5em;
+    width: 100%;
+    margin-bottom: 1.75em;
+    border-radius: 4px;
+    border: none;
+    background: #f3f3f3;
+}
+
+.main-login{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.container-filial-logada{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#FILIAL_LOGADA{
+    cursor: pointer;
+    color: #444444 !important;
+    font-weight: 500;
+    font-size: .9em;
+}
+
+.manter-conectado{
+    font-size: .9em;
+    display: flex;
+    align-self: center;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    cursor: pointer;
+    color: #242424;
+}
+
+.esqueci-senha{
+    margin-top: .2em;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #444444;
+    cursor: pointer;
+}
+
+.links-login{
+    display: flex;
+    justify-content: space-between;
+}
+
+.confirma-filial{
+    display: flex;
+    justify-content: center;
+}
+
+.content-login {
+    position: relative;
+    height: 100vh;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 5px 10px -1px #767676;
+    width: 70%;
+    background: white;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-red{
+    width: 50%;
+    background: #525252;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: end;
+    padding: 2em;
+    flex-direction: column-reverse;
+}
+
+.label{
+    margin-bottom: 0.75em !important;
+    font-size: .9em !important;
+}
+
+.container-entrar{
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 500;
+    color: #44444a;
+    height: auto;
+    border-bottom: 3px solid #44444a;
+    width: 60%;
+}
+
+.btn-sim-unico{
+    margin-top: 2em !important;
+    width: 80%;
+    font-weight: 400;
+    padding: .6em 2em;
+}
+
+.container-logar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    height: 22%;
+    margin-top: 1em;
+}
+
+#FILIAL_LOGADA{
+    color: white !important;
+    text-align: center;
+}
+
+.container-main-registrar{
+    align-self: center;
+    position: absolute;
+    top: 30%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boas-vindas{
+    font-size: 1.8em;
+    color: white;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+.text-boas-vindas{
+    font-size: 1.1em;
+    color: white;
+    margin-top: 0.75em;
+    width: 80%;
+    font-weight: 400;
+}
+
+.btn-registrar{
+    border: 2px solid white;
+    box-shadow: none;
+    width: 65%;
+    font-weight: 400;
+    font-size: 1.1em;
+    cursor: pointer;
+    text-align: center;
+    background: #525252;
+    padding: 0.5em;
+    border-radius: 15px;
+    color: #ffffff;
+    margin-top: 2em;
+}
+
+.btn-registrar:hover{
+    background: #7a7a7a !important
+}
+
+.text-registrar-usuario{
+    margin: 1em;
+    text-align: center;
+    width: 65%;
+    font-weight: 500;
+}
+
+.container-registrar-usuario{
+    display: flex;
+    justify-content: center;
+}
