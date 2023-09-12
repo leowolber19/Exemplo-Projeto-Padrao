@@ -91,7 +91,7 @@ function baixarPDF(name, content){
   html2pdf().set(opt).from(content).save();
 }
 
-function configuraToolbarGrid(title, icone){
+function configuraToolbarGrid(title, icone, arrayBotao){
   var gridjsHead = document.getElementsByClassName("gridjs-head")[0];
   var searchjsHead = document.getElementsByClassName("gridjs-search")[0];
   var titleGrid = document.createElement("div");
@@ -113,7 +113,23 @@ function configuraToolbarGrid(title, icone){
 
   iconsearch.classList.add("fas");
   iconsearch.classList.add("fa-search");
-  searchjsHead.appendChild(iconsearch)  
+  searchjsHead.appendChild(iconsearch);
+  
+  // BOTOES GRID TOOLBAR
+  for (let index = 0; index < arrayBotao.length; index++) {
+    var botao = document.createElement("div");
+    botao.innerHTML = arrayBotao[index].text;
+    botao.title = arrayBotao[index].title;
+    arrayBotao[index].main ? botao.classList.add("gridjs-btn") : botao.classList.add("gridjs-btn-icon");
+    botao.addEventListener("click", eval(`(${arrayBotao[index].onclick})`));
+
+    var iconbotao = document.createElement("i");
+    iconbotao.classList.add("fas");
+    iconbotao.classList.add(arrayBotao[index].icon);
+    
+    botao.appendChild(iconbotao);
+    searchjsHead.appendChild(botao);
+  }
 }
 
 const traducoes = {
