@@ -30,11 +30,23 @@ function abreLoadPanel() {
   var load = document.createElement("div");
   load.classList.add("loader");
 
+  document.body.style.backgroundColor = 'rgb(171 171 171 / 50%)';
   document.body.appendChild(load);
+
+  if(document.getElementsByClassName("main-conteudo-menu")[0] != null)
+    return document.getElementsByClassName("main-conteudo-menu")[0].style.opacity = '0.5';
+
+  return document.getElementsByClassName("content")[0].style.opacity = '0.5'; 
 }
 
 function fechaLoadPanel() {
-    document.getElementsByClassName("loader")[0].remove();
+  document.body.style.backgroundColor = '';
+  document.getElementsByClassName("loader")[0].remove();
+
+  if(document.getElementsByClassName("main-conteudo-menu")[0] != null)
+    return document.getElementsByClassName("main-conteudo-menu")[0].style.opacity = '1';
+
+  return document.getElementsByClassName("content")[0].style.opacity = '1';
 }
 
 function formatarMoeda(valor){
@@ -78,3 +90,44 @@ function baixarPDF(name, content){
 
   html2pdf().set(opt).from(content).save();
 }
+
+function configuraToolbarGrid(title, icone){
+  var gridjsHead = document.getElementsByClassName("gridjs-head")[0];
+  var searchjsHead = document.getElementsByClassName("gridjs-search")[0];
+  var titleGrid = document.createElement("div");
+
+  // ICONE NO TEXTO DO GRID
+  var icon = document.createElement("i");
+
+  icon.classList.add("fas");
+  icon.classList.add(icone);
+  
+  // TEXTO DO GRID
+  titleGrid.innerHTML = title;
+  titleGrid.appendChild(icon);
+  titleGrid.classList.add("gridjs-title");
+  gridjsHead.appendChild(titleGrid);
+
+  // ICONE NO PESQUISAR
+  var iconsearch = document.createElement("i");
+
+  iconsearch.classList.add("fas");
+  iconsearch.classList.add("fa-search");
+  searchjsHead.appendChild(iconsearch)  
+}
+
+const traducoes = {
+  'search': {
+    'placeholder': 'Pesquisar...',
+  },
+  'pagination': {
+    'previous': 'Anterior',
+    'next': 'Próximo',
+    'showing': ' ',
+    'results': 'Registros',
+    'of': "de",
+    'to': "a",
+    'Loading...': "Carregando..."
+  },
+  'noRecordsFound': 'Nenhum registro encontrado',
+};

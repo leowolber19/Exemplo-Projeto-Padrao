@@ -104,7 +104,7 @@ display: flex;
     width: 75px;
     height: 75px;
     margin: -76px 0 0 -76px;
-    border: 16px solid #f3f3f3;
+    border: 16px solid white;
     border-radius: 50%;
     border-top: 16px solid #525252;
     -webkit-animation: spin 2s linear infinite;
@@ -224,12 +224,11 @@ input:disabled {
     flex-direction: column;
 }
 
-.gridjs-wrapper{
-    height: 80% !important;
-}
-
 .gridjs-container{
     height: 100% !important;
+    box-shadow: 0px 5px 5px -1px #c6c6c6;
+    border-radius: 8px;
+    background: white;
 }
 
 .datagrid-container{
@@ -245,7 +244,8 @@ input:disabled {
 .gridjs-wrapper{
     background: white !important;
     box-shadow: none !important;
-    border-radius: 0 !important
+    border-radius: 0 !important;
+    height: calc(100vh - 265px) !important;
 }
 
 .gridjs-input{
@@ -264,4 +264,49 @@ input:disabled {
 
 .gridjs-footer{
     box-shadow: none !important;
+}
+
+.gridjs-head{
+    display: flex !important;
+    flex-direction: row-reverse !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+    align-items: center !important;
+}
+
+.gridjs-search{
+    width: 50% !important;
+    text-align: end !important;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: row-reverse;
+    gap: 0.25em;
+    color: #6b7280;
+}
+
+.gridjs-title{
+    width: 50%;
+    color: #6b7280;
+    font-weight: 500;
+    font-size: 1.1em;
+    margin-left: 0.5em;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 0.75em;
+}
+
+::-webkit-scrollbar {
+    width: 5px !important;
+    height: 5px !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888 !important;
+}
+
+.gridjs-th{
+    width: auto !important;
 }

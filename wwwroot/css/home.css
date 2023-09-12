@@ -20,6 +20,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: .4s;
 }
 
 .main-conteudo-menu {

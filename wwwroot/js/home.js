@@ -12,8 +12,8 @@ function abreMenuLateral() {
     for (let index = 0; index < document.querySelectorAll(".text-menu").length; index++) {
         document.querySelectorAll(".text-menu")[index].style.display = element == "5%" ? "block" : "none";
     }
-    
-    return document.getElementsByClassName("menu-lateral")[0].style.width = element == "5%" ? "18%" : "5%"
+
+    return document.getElementsByClassName("menu-lateral")[0].style.width = element == "5%" ? "18%" : "5%";
 }
 
 function exibeConteudoModulo(content) {
