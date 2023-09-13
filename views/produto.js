@@ -12,10 +12,10 @@ function produtoView(){
         pagination: true,
         fixedHeader: true,
         resizable: true,
-        columns: ['name', 'model', 'consumables'],
+        columns: ['Id', 'Tag'],
         server: {
-          url: 'https://swapi.dev/api/vehicles',
-          then: data => data.results.map(movie => [movie.name, movie.model, movie.consumables])
+          url: 'https://localhost:7010/GetTags',
+          then: data => data.results.map(b => [b.Id, b.Tag])
         }, 
         language: traducoes
       }).render(document.getElementById("produtoGrid"));
