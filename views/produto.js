@@ -15,7 +15,7 @@ function produtoView(){
         columns: ['Id', 'Tag'],
         server: {
           url: 'https://localhost:7010/GetTags',
-          then: data => data.results.map(b => [b.Id, b.Tag])
+          then: data => data.map(b => [b.Id, b.Tag])
         }, 
         language: traducoes
       }).render(document.getElementById("produtoGrid"));
